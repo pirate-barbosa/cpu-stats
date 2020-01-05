@@ -13,6 +13,6 @@ app.use('/drive', drive);
 app.use('/memory', memory);
 app.use('/os', os);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('successfully connected to port 3000');
 });
